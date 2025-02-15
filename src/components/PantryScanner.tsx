@@ -41,6 +41,15 @@ const PantryScanner: React.FC<PantryScannerProps> = ({ pantryItems, setPantryIte
       <h1 className="text-3xl font-bold mb-6">Add Pantry Items</h1>
       
       <div className="mb-8">
+        <button
+          onClick={() => navigate('/scan')}
+          className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 transition-colors"
+        >
+          Scan Items
+        </button>
+      </div>
+
+      <div className="mb-8">
         <h2 className="text-xl font-semibold mb-4">Scan Receipt</h2>
         <input
           type="file"

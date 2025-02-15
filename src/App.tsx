@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import PantryScanner from './components/PantryScanner';
 import MealPlanner from './components/MealPlanner';
 import PreferencesForm from './components/PreferencesForm';
+import Scanner from './components/Scanner';
 import { DietaryPreferences, Ingredient } from './types/types';
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
                   setPantryItems={setPantryItems} 
                 />
               } 
+            />
+            <Route 
+              path="/scan" 
+              element={<Scanner />} 
             />
             <Route 
               path="/preferences" 
